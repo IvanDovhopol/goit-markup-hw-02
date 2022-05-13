@@ -1,0 +1,181 @@
+/* Главный шрифт Roboto */
+/* Шрифт логотипа Raleway */
+
+/* Все цвета текста */
+/* #2196F3 - синий */
+/* #212121 - основной черный */
+/* #757575 - серый */
+/* #FFFFFF - белый */
+/* rgba(255, 255, 255, 0.6); - белый 60% */
+
+/* Стили макета */
+/* #F5F4FA - Наша команда */
+/* #2F303A - Футер и герой */
+/* #ECECEC - Шапка */
+/* #2196F3 - Aкцент */
+/* #E5E5E5 - цвет фона */
+
+:root {
+  --primory-background-color: #e5e5e5;
+  --title-text-color: #212121;
+  --p-text-color: #757575;
+  --accent-color: #2196f3;
+  --header-background-color: #ececec;
+  --footer-hero-background-color: #2f303a;
+  --white-text-color: #ffffff;
+  --grey-background-color: #f5f4fa;
+  --contact-text-color: rgba(255, 255, 255, 0.6);
+  --black-text-color: #000000;
+}
+
+/* Основная страница */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--primory-background-color);
+  color: var(--title-text-color);
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Навигация */
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2rem;
+  text-decoration: none;
+  color: var(--black-text-color);
+}
+
+.logo-color2 {
+  color: var(--accent-color);
+}
+
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .connect {
+  font-size: 14px;
+  line-height: 1.14rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--p-text-color);
+}
+
+.site-nav .connect:hover,
+.site-nav .connect:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero .title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36rem;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--white-text-color);
+}
+
+/* button */
+.button {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87rem;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+
+/* section-title */
+.section-title {
+  text-align: center;
+}
+
+.feature-list .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14rem;
+  color: var(--title-text-color);
+}
+
+.team-list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2rem;
+  color: var(--title-text-color);
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2rem;
+  color: var(--p-text-color);
+}
+
+.feature-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7rem;
+  color: var(--p-text-color);
+}
+
+/* footer */
+.address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7rem;
+  color: var(--white-text-color);
+}
+
+.footer-nav .connect {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7rem;
+  text-decoration: none;
+  color: var(--contact-text-color);
+}
+
+/* Страница портфолио */
+.portfolio-nav .link {
+  color: var(--title-text-color);
+  background-color: var(--grey-background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6rem;
+}
+
+.portfolio-nav .link:hover,
+.portfolio-nav .link:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio-work .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2rem;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-work .text {
+  color: var(--p-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87rem;
+}
