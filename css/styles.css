@@ -11,7 +11,6 @@
 /* Стили макета */
 /* #F5F4FA - Наша команда */
 /* #2F303A - Футер и герой */
-/* #ECECEC - Шапка */
 /* #2196F3 - Aкцент */
 /* #E5E5E5 - цвет фона */
 
@@ -20,7 +19,6 @@
   --title-text-color: #212121;
   --p-text-color: #757575;
   --accent-color: #2196f3;
-  --header-background-color: #ececec;
   --footer-hero-background-color: #2f303a;
   --white-text-color: #ffffff;
   --grey-background-color: #f5f4fa;
@@ -31,7 +29,6 @@
 /* Основная страница */
 body {
   font-family: "Roboto", sans-serif;
-  background-color: var(--primory-background-color);
   color: var(--title-text-color);
   letter-spacing: 0.03em;
 }
@@ -50,7 +47,7 @@ body {
   color: var(--black-text-color);
 }
 
-.logo-color2 {
+.logo-blue {
   color: var(--accent-color);
 }
 
@@ -81,18 +78,28 @@ body {
   color: var(--accent-color);
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
 /* Hero */
+.hero {
+  background-color: var(--footer-hero-background-color);
+}
+
 .hero .title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36rem;
   letter-spacing: 0.06em;
   text-align: center;
+  text-transform: uppercase;
   color: var(--white-text-color);
 }
 
 /* button */
-.button {
+.hero .button {
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -104,13 +111,18 @@ body {
 
 /* section-title */
 .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16rem;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .feature-list .title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14rem;
+  text-transform: uppercase;
   color: var(--title-text-color);
 }
 
@@ -122,29 +134,29 @@ body {
 }
 
 .team-text {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.2rem;
   color: var(--p-text-color);
 }
 
 .feature-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7rem;
   color: var(--p-text-color);
 }
 
 /* footer */
+.footer {
+  background-color: var(--footer-hero-background-color);
+}
+
 .address {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7rem;
+  font-style: normal;
   color: var(--white-text-color);
 }
 
 .footer-nav .connect {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7rem;
   text-decoration: none;
@@ -175,7 +187,21 @@ body {
 
 .portfolio-work .text {
   color: var(--p-text-color);
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.87rem;
+}
+
+.portfolio-list .button {
+  background-color: var(--grey-background-color);
+  color: var(--title-text-color);
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6rem;
+}
+
+.portfolio-list .button:hover,
+.portfolio-list .button:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
 }
