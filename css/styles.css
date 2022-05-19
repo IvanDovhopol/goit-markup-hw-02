@@ -1,212 +1,243 @@
-/* Главный шрифт Roboto */
-/* Шрифт логотипа Raleway */
-
-/* Все цвета текста */
-/* #2196F3 - синий */
-/* #212121 - основной черный */
-/* #757575 - серый */
-/* #FFFFFF - белый */
-/* rgba(255, 255, 255, 0.6); - белый 60% */
-
-/* Стили макета */
-/* #F5F4FA - Наша команда */
-/* #2F303A - Футер и герой */
-/* #2196F3 - Aкцент */
-/* #E5E5E5 - цвет фона */
-
 :root {
-  --primory-background-color: #e5e5e5;
-  --title-text-color: #212121;
-  --p-text-color: #757575;
+  --team-background-color: #f5f4fa;
+  --primory-title-color: #212121;
+  --nav-text-color: #212121;
+  --button-text-color: #212121;
+  --secondary-title-color: #ffffff;
+  --accent-button-text-color: #ffffff;
+  --address-text-color: #ffffff;
+  --hero-background-color: #2f303a;
+  --footer-background-color: #2f303a;
+  --all-text-color: #757575;
   --accent-color: #2196f3;
-  --footer-hero-background-color: #2f303a;
-  --white-text-color: #ffffff;
-  --grey-background-color: #f5f4fa;
-  --contact-text-color: rgba(255, 255, 255, 0.6);
-  --black-text-color: #000000;
+  --primory-logo-color: #2196f3;
+  --secondary-logo-color: #000000;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --header-contact-color: #757575;
 }
 
-/* Основная страница */
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--title-text-color);
+  color: var(--primory-title-color);
   letter-spacing: 0.03em;
 }
 
 .list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
 
-/* Навигация */
-.logo {
+/* ------------------------ header ------------------------*/
+.header-logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
-  color: var(--black-text-color);
+  line-height: 1.19;
+  color: var(--secondary-logo-color);
+}
+.header-logo-blue {
+  color: var(--primory-logo-color);
 }
 
-.footer .logo {
-  color: var(--white-text-color);
-}
-
-.logo .logo-blue {
-  color: var(--accent-color);
-}
-
-.site-nav .link {
+.header-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--title-text-color);
+  color: var(--nav-text-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.header-link:hover,
+.header-link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .connect {
+.current {
+  color: var(--accent-color);
+}
+
+.header-link-contact {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--p-text-color);
+  color: var(--header-contact-color);
 }
 
-.site-nav .connect:hover,
-.site-nav .connect:focus {
+.header-link-contact:hover,
+.header-link-contact:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
-  color: var(--accent-color);
-}
+/* ------------------------ hero ------------------------*/
 
-/* Hero */
 .hero {
-  background-color: var(--footer-hero-background-color);
+  background-color: var(--hero-background-color);
 }
-
-.hero .title {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  letter-spacing: 0.06em;
   text-align: center;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white-text-color);
+  color: var(--secondary-title-color);
 }
-
-/* button */
-.hero .button {
+.hero-button {
   font-family: inherit;
-  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
   letter-spacing: 0.06em;
-  color: var(--white-text-color);
+  color: var(--accent-button-text-color);
   background-color: var(--accent-color);
 }
 
-/* section-title */
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
+/* ------------------------ feature ------------------------*/
+.feature-title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
-.feature-list .title {
-  font-weight: 700;
+.feature-item-title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--title-text-color);
 }
 
-.team-list .title {
+.feature-item-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--all-text-color);
+}
+
+/* ------------------------ company ------------------------*/
+.company-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* ------------------------ team ------------------------*/
+
+.team {
+  background-color: var(--team-background-color);
+}
+
+.team-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.team-item-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
-  color: var(--title-text-color);
+  line-height: 1.18;
+}
+.team-item-text {
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--all-text-color);
 }
 
-.team-text {
-  line-height: 1.2;
-  color: var(--p-text-color);
-}
+/* ------------------------ footer ------------------------*/
 
-.feature-text {
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--p-text-color);
-}
-
-/* footer */
 .footer {
-  background-color: var(--footer-hero-background-color);
+  background-color: var(--footer-background-color);
 }
 
-.address {
-  font-size: 14px;
-  line-height: 1.7;
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #ffffff;
+}
+
+.footer-logo-blue {
+  color: var(--primory-logo-color);
+}
+
+.footer-link-address {
   font-style: normal;
-  color: var(--white-text-color);
-}
-
-.footer-nav .connect {
   font-size: 14px;
-  line-height: 1.7;
-  text-decoration: none;
-  color: var(--contact-text-color);
+  line-height: 1.71;
+  color: var(--address-text-color);
 }
 
-/* Страница портфолио */
-.portfolio-nav .link {
-  color: var(--title-text-color);
-  background-color: var(--grey-background-color);
+.footer-link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--footer-contact-color);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+
+/* ---------------------- portfolio ----------------------*/
+.portfolio-title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.portfolio-button {
+  font-family: inherit;
+  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--button-text-color);
 }
 
-.portfolio-nav .link:hover,
-.portfolio-nav .link:focus {
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
+/* ----------------------- product -----------------------*/
+.product-title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
-.portfolio-work .title {
-  font-weight: 700;
+.product-title-item {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.portfolio-work .text {
-  color: var(--p-text-color);
-  line-height: 1.87;
-}
-
-.portfolio-list .button {
-  background-color: var(--grey-background-color);
-  color: var(--title-text-color);
-  font-family: inherit;
-  cursor: pointer;
-  font-weight: 500;
+.product-text {
   font-size: 16px;
-  line-height: 1.6;
-}
-
-.portfolio-list .button:hover,
-.portfolio-list .button:focus {
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
+  line-height: 1.88;
+  color: var(--all-text-color);
 }
